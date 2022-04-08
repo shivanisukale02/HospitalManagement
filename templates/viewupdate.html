@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 style="text-align: center; margin-top:1% ;">UPDATE PATIENT</h3>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"></div>
+            <form action="/viewupdate" method="post">
+                <table class="table table-borderless">
+                    <tr>
+                        <td>Name </td>
+                        <td><input name="Name" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number </td>
+                        <td><input name="Mobile Number" type="number" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Age </td>
+                        <td><input name="Age" type="number" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Address </td>
+                        <td><input name="Address" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Birth </td>
+                        <td><input name="DOB" type="date" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Place </td>
+                        <td><input name="Place" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td>Pincode</td>
+                        <td><input name="Pincode" type="number" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button class="btn btn-success" type="submit">UPDATE</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

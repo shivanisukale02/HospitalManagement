@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+    <h3 style="text-align: center;">Delete Patient</h3>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <form action="/delete" method="post">
+                    <table class="table table-borderless">
+                        <tr>
+                            <td>Mobile Number</td>
+                            <td><input name="Mobile Number" type="text" class="form-control"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn btn-danger">Delete</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

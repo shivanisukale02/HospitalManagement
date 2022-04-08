@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h3 style="text-align: center; margin-top:1% ; color: white;">UPDATE PATient Details</h3>
+    <hr style="color: white;">
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <form action="/update" method="post">
+              <table class="table table-borderless">
+                <tr>
+                    <td>Mobile no</td>
+                    <td><input name = "Mobile Number" type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button class="btn btn-warning" type="submit">UPDATE</button></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+{% endblock %}
+    
